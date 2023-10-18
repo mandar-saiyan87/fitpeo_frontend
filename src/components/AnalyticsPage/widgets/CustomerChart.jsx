@@ -1,28 +1,7 @@
 import React from 'react'
-import { Chart as ChartJS, ArcElement} from 'chart.js';
+import { Chart as ChartJS, ArcElement } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
-
-
-const donText = <p><span className='text-2xl font-semibold'>65%<br></br></span><span>Total New <br></br>Customers</span></p>
-
-// const textCenter = {
-//   id: 'textCenter',
-//   beforeDatasetDraw(chart) {
-//     if (chart.id === 3) {
-//       const { ctx, data } = chart
-
-//       console.log(data['datasets'][0]['label'])
-
-//       ctx.font = '40px'
-//       ctx.fillStyle = 'red'
-//       ctx.textAlign = 'center'
-//       ctx.textBaseline = 'middle'
-//       ctx.fillText(data['datasets'][0]['label'], chart.getDatasetMeta(0).data[0].x, chart.getDatasetMeta(0).data[0].y)
-//      }
-
-//   }
-// }
 
 ChartJS.register(ArcElement);
 
@@ -86,11 +65,7 @@ const CustomerChart = () => {
 
 export default CustomerChart
 
-// < Doughnut data = { data } options = { options } />
-  
-  // < div className = 'flex items-center text-center' >
-  //   <p><span className='text-2xl font-semibold'>65%<br></br></span><span>Total New <br></br>Customers</span></p>
-  //         </div >
+
 
 
 

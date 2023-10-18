@@ -66,6 +66,9 @@ const OverviewChart = () => {
             legend: {
               display: false
             },
+            tooltip: {
+              display: false
+            }
           },
           elements: {
             bar: {

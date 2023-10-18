@@ -120,9 +120,3 @@ const Analytics = ({ onOpen }) => {
 
 export default Analytics
 
-{/* < div className = 'mt-6 grid gap-7 grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4' >
-      <StatusCard title={'Earnings'} color={'green'} growth={37.8} stats={198} bgColor={'bg-green-200'} />
-      <StatusCard title={'Orders'} color={'purple'} growth={-2} stats={2.4} bgColor={'bg-purple-200'} />
-      <StatusCard title={'Balance'} color={'blue'} growth={-2} stats={2.4} bgColor={'bg-blue-200'} />
-      <StatusCard title={'Total Sales'} color={'red'} growth={11} stats={89} bgColor={'bg-red-200'} />
-    </ div> */}
