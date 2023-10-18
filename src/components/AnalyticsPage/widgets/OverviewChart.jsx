@@ -45,7 +45,7 @@ const data = {
 
 const OverviewChart = () => {
   return (
-    <div>
+    <div className='w-full h-full'>
       <Bar
         data={data}
         options={{
