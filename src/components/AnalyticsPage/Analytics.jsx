@@ -46,7 +46,7 @@ const Analytics = ({ onOpen }) => {
         <div className='w-full flex flex-col items-start md:flex-row justify-between md:items-center py-4 px-5'>
           <h4 className='text-base font-semibold mb-3 md:text-xl md:mb-0'>Product Sell</h4>
           <div className='w-full flex flex-col gap-5 md:flex-row md:w-[60%] justify-end lg:w-[40%]'>
-            <div className='w-[50%] flex items-center bg-gray-100 gap-2 px-3 py-2 rounded-md'>
+            <div className='w-full sm:w-[50%] flex items-center bg-gray-100 gap-2 px-3 py-2 rounded-md'>
               <FiSearch size={20} color='#373737' />
               <input type="text" placeholder='Search' className='w-full bg-gray-100 text-sm text-slate-400 placeholder:text-slate-400 placeholder:text-sm font-medium focus:outline-none' />
             </div>
