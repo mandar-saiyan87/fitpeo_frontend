@@ -14,8 +14,8 @@ const pieThickness = {
     chart.getDatasetMeta(0).data[0].outerRadius = 148
     chart.getDatasetMeta(0).data[1].innerRadius = 80
     chart.getDatasetMeta(0).data[1].outerRadius = 142
-    chart.getDatasetMeta(0).data[2].innerRadius = 85
-    chart.getDatasetMeta(0).data[2].outerRadius = 130
+    chart.getDatasetMeta(0).data[2].innerRadius = 88
+    chart.getDatasetMeta(0).data[2].outerRadius = 123
   }
 }
 
@@ -67,7 +67,7 @@ const CustomerChart = () => {
         <p className='text-xs text-slate-300 md:text-sm'>Customers that buy products</p>
       </div>
       < div className='flex items-center justify-center relative' >
-        <div className='my-4 rounded-full'>
+        <div className='my-4 rounded-full bg-white p-2 shadow-lg shadow-slate-200'>
           <Doughnut data={data} options={options} />
         </div>
         <div className='absolute w-[20%] text-center'>
