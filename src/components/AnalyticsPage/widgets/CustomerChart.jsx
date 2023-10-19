@@ -3,7 +3,23 @@ import { Chart as ChartJS, ArcElement } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 
-ChartJS.register(ArcElement);
+const pieThickness = {
+  id: 3,
+  beforeDraw(chart) {
+    console.log(chart)
+    // console.log(chart.chartArea.width)
+    const donWidth = chart.chartArea.width
+    console.log(chart.getDatasetMeta(0).data[2])
+    chart.getDatasetMeta(0).data[0].innerRadius
+    chart.getDatasetMeta(0).data[0].outerRadius = 148
+    chart.getDatasetMeta(0).data[1].innerRadius = 80
+    chart.getDatasetMeta(0).data[1].outerRadius = 142
+    chart.getDatasetMeta(0).data[2].innerRadius = 85
+    chart.getDatasetMeta(0).data[2].outerRadius = 130
+  }
+}
+
+ChartJS.register(ArcElement, pieThickness);
 
 const data = {
   labels: '',
@@ -25,7 +41,7 @@ const data = {
 
 
 const options = {
-  cutout: 80,
+  cutout: 72,
   responsive: true,
   maintainAspectRatio: true,
 
@@ -36,7 +52,7 @@ const options = {
     tooltip: {
       enabled: false,
     },
-
+    pieThickness
   }
 };
 
@@ -51,8 +67,8 @@ const CustomerChart = () => {
         <p className='text-xs text-slate-300 md:text-sm'>Customers that buy products</p>
       </div>
       < div className='flex items-center justify-center relative' >
-        <div className='mt-8 mb-4'>
-          <Doughnut id='custChart' data={data} options={options} />
+        <div className='my-4 rounded-full'>
+          <Doughnut data={data} options={options} />
         </div>
         <div className='absolute w-[20%] text-center'>
           <p className='text-base font-semibold lg:text-xl'>65% <span className='text-xs font-normal lg:text-sm'>Total New Customers</span></p>
