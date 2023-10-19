@@ -70,8 +70,8 @@ const CustomerChart = () => {
         <div className='my-4 rounded-full bg-white p-2 shadow-lg shadow-slate-200'>
           <Doughnut data={data} options={options} />
         </div>
-        <div className='absolute w-[20%] text-center'>
-          <p className='text-base font-semibold lg:text-xl'>65% <span className='text-xs font-normal lg:text-sm'>Total New Customers</span></p>
+        <div className='absolute w-[30%] text-center'>
+          <p className='text-base leading-4 font-bold lg:text-2xl'>65%<br></br><span className='text-xs font-normal leading-4 lg:text-sm'>Total New Customers</span></p>
         </div>
       </ div>
 
