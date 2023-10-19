@@ -8,8 +8,8 @@ const pieThickness = {
   beforeDraw(chart) {
     console.log(chart)
     // console.log(chart.chartArea.width)
-    const donWidth = chart.chartArea.width
-    console.log(chart.getDatasetMeta(0).data[2])
+    // const donWidth = chart.chartArea.width
+    // console.log(chart.getDatasetMeta(0).data[2])
     chart.getDatasetMeta(0).data[0].innerRadius
     chart.getDatasetMeta(0).data[0].outerRadius = 148
     chart.getDatasetMeta(0).data[1].innerRadius = 80
